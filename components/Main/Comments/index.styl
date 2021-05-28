@@ -1,0 +1,66 @@
+.root
+  padding 2u
+  background-color #f5f5f5
+  +tablet()
+    padding 4u
+  &.alt
+    background-color #ffffff
+ 
+.circle
+  width 80
+  height 80
+  border solid 1px #0d0d0d
+  radius(circle)
+  text-align center
+  justify-content center
+
+.circleInfo
+  margin-left 1u
+  flex 1 
+  +tablet()
+    margin-left 2u
+    flex 1
+
+.iconManage
+  margin-top 6u
+
+.yearComment
+  font(m)
+  margin-left 6u
+  color #c4c4c4
+
+.commentDescription
+  font(l)
+  margin-top 4u
+  color #636363
+
+.alig
+  align-self center
+
+.avatarComment
+  align-self flex-end
+
+.commentInfo
+  flex 1
+  margin-left 6u
+
+.commentContent
+  margin-top 4u
+  &.first
+    margin-top 0u
+
+.inputComment
+  flex 1
+  margin-top 6u
+  margin-left 6u
+
+.name
+  font(m)
+  color #c4c4c4
+  &.red
+    font(l)
+    color red
+  &.black
+    font(l)
+    margin-top 6u
+    color #636363

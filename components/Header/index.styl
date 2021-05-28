@@ -1,0 +1,56 @@
+.root
+  margin-left 2u
+  margin-top 4u
+  flex-direction row
+  justify-content space-between
+  flex-wrap wrap
+  +tablet()
+    justify-content start
+    margin-left 24u
+  +desktop()
+    margin-left 24u 
+
+.image
+  width 18u
+  height 18u
+  +tablet()
+    width 20u
+    height 18u
+  +desktop()
+    width 20u
+    height 18u
+  +wide()
+    width 38u
+    height 18u
+
+.menuItem
+  width 8u
+  height 4u
+  align-self flex-end
+  text-align center
+  color #ffffff
+  padding 0
+  margin-left 0u
+  +tablet()
+    width 10u
+    height 8u
+  +desktop()
+    width 14u
+    height 8u
+  &.first
+    margin-left 2u
+
+.menu
+  display none
+  +tablet()
+    display flex
+
+.helloField
+  color #ffffff
+
+.nameField
+  color #ffffff
+  margin-top 2u
+  
+.avatar
+  margin-left 2u
