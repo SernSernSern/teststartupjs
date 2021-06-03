@@ -40,12 +40,12 @@ const data = [
 export default observer(function EventDiv() {
   return pug`
     Div.root
-      each item in data
-        Div.contentEvent
+      each item, index in data
+        Div.contentEvent(key=index)
           H5.text(styleName='red')=item.title
           H3.text(styleName='red') EVENT
-          each even in item.event
-            Row
+          each even, id in item.event
+            Row(key=id)
               Image.pic(
                 source = {uri: base + even.pic}
                 resizeMode="contain"

@@ -51,8 +51,8 @@ export default observer(function Comments() {
 
   return pug`
     Div.root(styleName='alt')
-      each item in comment
-        Row.commentContent
+      each item, index in comment
+        Row.commentContent(key=index)
           Div.circle
             H5=item.count
           Div.circleInfo
@@ -69,8 +69,8 @@ export default observer(function Comments() {
                 Button(variant='text', icon=faTrash)
                 Button(variant='text', icon=faHeart) MANAGE
             Div.root
-              each comm, index in item.comment
-                Row.commentContent(styleName={first:!index})
+              each comm, id in item.comment
+                Row.commentContent(key=id styleName={first:!index})
                   Avatar
                   Div.commentInfo
                     Span.name(styleName='red')=comm.author
