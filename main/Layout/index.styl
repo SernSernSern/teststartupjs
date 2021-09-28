@@ -1,10 +1,29 @@
 $menuHeight = 6u
 
 .sidebar
-  background-color #eee
+  background-color red
 
   &-menu
-    padding-top 2u
+    flex 1
+  
+
+.image
+  width 100%
+  height 100%
+
+.logo
+  width 18u
+  height 18u
+  align-self center
+  +tablet()
+    width 24u
+    height 18u
+  +desktop()
+    width 18u
+    height 18u
+
+.manuItem
+  margin-top 2u
 
 .menu
   background-color rgba(black, 0.02)
